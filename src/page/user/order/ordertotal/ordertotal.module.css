@@ -1,0 +1,8 @@
+.Odertotal
+{
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+    background: rgb(226, 226, 226);;
+    gap: 30px;
+}

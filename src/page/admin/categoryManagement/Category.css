@@ -1,0 +1,11 @@
+.category_Phone .ant-tabs-tab .ant-tabs-tab-btn span{
+    outline: none;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category_Phone .ant-tabs-tab .ant-tabs-tab-btn span svg{
+    margin-right: 4px;
+    font-size: 15px;
+}

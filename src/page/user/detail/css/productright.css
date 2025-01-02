@@ -1,0 +1,427 @@
+a {
+  text-decoration: none;
+  color: rgb(13, 92, 182);
+}
+.brand,
+.price-discount,
+.item,
+.product-color {
+  display: flex;
+  margin-top: 8px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.number {
+  display: block;
+  cursor: pointer;
+  margin-left: 8px;
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+  line-height: 24px;
+}
+.bestseller p {
+  margin: 0;
+}
+.product-color {
+  flex-wrap: wrap;
+}
+.productright {
+  width: 770px;
+  position: relative;
+}
+.productright::before{
+  content: '';
+  width: 1px;
+  height: calc(100% - 16px);
+  background: rgb(228, 228, 228);
+  position: absolute;
+  top: 0;
+  left: -13px;
+}
+.header,
+.body {
+  width: 100%;
+}
+.body {
+  display: flex;
+}
+.addtocard,
+.selectproduct,
+.price-and-icon {
+  margin-top: 12px;
+  padding-top: 18px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(242, 242, 242);
+}
+
+.right {
+  width: 40%;
+  border-radius: 4px;
+  box-shadow: rgb(242 242 242) 1px 1px 0px 0px inset,
+    rgb(242 242 242) -1px -1px 0px 0px inset;
+}
+
+.header .title {
+  margin: 0px 0px 4px;
+  color: rgb(36, 36, 36);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  word-break: break-word;
+  text-align: start;
+}
+.price-and-icon {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgb(250, 250, 250);
+  padding: 0px 16px 12px;
+}
+.current-price,
+.list-price,
+.discount {
+  margin-left: 8px;
+}
+.below-title div {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.gXZfKO {
+  width: 1px;
+  height: 12px;
+  background-color: rgb(199, 199, 199);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.current-price {
+  font-size: 32px;
+  line-height: 40px;
+  margin-right: 8px;
+  font-weight: 500;
+  color: rgb(255, 66, 78);
+}
+.price-discount {
+  padding-top: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.list-price {
+  color: rgb(128, 128, 137);
+  text-decoration: line-through;
+  font-size: 14px;
+  line-height: 20px;
+}
+.discount {
+  font-weight: 400;
+  margin-left: 8px;
+  border: 1px solid rgb(255, 66, 78);
+  border-radius: 2px;
+  background-color: rgb(255, 240, 241);
+  color: rgb(255, 66, 78);
+  line-height: 18px;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+.item img {
+  width: 130px;
+  height: 24px;
+}
+.WebpImg__StyledImg-sc-h3ozu8-0 {
+  height: 100%;
+}
+.option1 {
+  cursor: pointer;
+  height: 60px;
+  margin: 8px 10px 0px 0px;
+  padding: 2px;
+  color: rgb(36, 36, 36);
+  font-size: 13px;
+  width: 144px;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid transparent;
+  outline: 0px;
+  border-radius: 4px;
+}
+.option1:hover {
+  border: 1px solid rgb(13, 92, 182);
+  background-color: rgb(229, 242, 255);
+}
+.option1:hover .selected-indicator {
+  display: block;
+}
+.size button:hover {
+  border: 1px solid rgb(13, 92, 182);
+  background-color: rgb(229, 242, 255);
+}
+.left {
+  width: 150%;
+}
+.amoutn>p{
+  margin: 0;
+}
+.right {
+  width: 240px;
+  margin: 16px;
+  flex-shrink: 0;
+  border: solid 1px rgb(235, 235, 235);
+  overflow: hidden;
+  margin-right: 0;
+}
+.size button {
+  cursor: pointer;
+  margin: 8px 10px 0px 0px;
+  padding: 8px;
+  color: rgb(36, 36, 36);
+  font-size: 13px;
+  min-width: 80px;
+  position: relative;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid transparent;
+  outline: 0px;
+  border-radius: 4px;
+}
+.size button:hover .selected-indicator {
+  display: block;
+}
+.selected-indicator {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  display: none;
+}
+.select-size {
+  margin-top: 16px;
+}
+#detail-size,
+#detail-color {
+  font-weight: 900;
+ 
+}
+.group-input {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.group-input button {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(236, 236, 236);
+}
+.group-input button:first-child {
+  border-right: none;
+  border-radius: 4px 0px 0px 4px;
+  padding: 4px;
+}
+.group-input button:last-child {
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+  padding: 4px;
+}
+.group-input input {
+  width: 40px;
+  border: 1px solid rgb(236, 236, 236);
+  height: 30px;
+  color: rgb(36, 36, 36);
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+}
+.group-button {
+  margin-top: 16px;
+  flex: 1 1 0%;
+  display: flex;
+}
+
+.group-button button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 57, 69);
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 190px;
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.refund {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid rgb(242, 242, 242);
+}
+.refund span {
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 8px;
+}
+.insurance div {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 8px 12px;
+  border-top: 1px solid rgb(242, 242, 242);
+}
+.insurance div span:first-child {
+  color: rgb(120, 120, 120);
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.insurance div span:last-child {
+  color: rgb(13, 92, 182);
+  cursor: pointer;
+}
+.seller-action {
+  display: flex;
+  padding: 12px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.overview {
+  display: flex !important;
+  align-items: flex-start;
+}
+.overview-right {
+  margin: 18px 0 0 12px;
+}
+.overview-right span {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgb(36, 36, 36);
+}
+.logo {
+  width: 44px;
+  margin: 8px;
+}
+.seller-detail {
+  display: flex;
+  min-height: 39px;
+}
+.action,
+.follow {
+  display: flex;
+  padding: 6px 9px;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid rgb(13, 92, 182);
+  cursor: pointer;
+  background-color: transparent;
+}
+.action span,
+.follow span {
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: rgb(13, 92, 182);
+  margin-left: 4px;
+}
+.action img,
+.follow img {
+  width: 20px;
+  height: 20px;
+}
+.seller-detail .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.border-left {
+  align-self: center;
+  width: 1px;
+  height: 16px;
+  background-color: rgb(242, 242, 242);
+}
+.seller-detail {
+  display: flex;
+  min-height: 39px;
+}
+.benefit-item {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 30%;
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.delivery {
+  display: flex;
+  padding: 12px 0px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  margin: 16px 0px 0px;
+  border-top: 1px solid rgb(242, 242, 242);
+}
+.delivery div .address {
+  text-decoration: underline;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.delivery div .address-change {
+  color: rgb(11, 116, 229);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.amoutn-value {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  padding: 3px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.selectproduct,
+.addtocard,
+.delivery {
+  padding: 15px 0 15px 15px;
+  border: solid 1px rgb(235, 235, 235);
+}
+
+.info-shop,
+.insurance,
+.refund {
+  background-color: white;
+}
+.show-select {
+  display: block;
+}
+.show-border {
+  border: 1px solid rgb(13, 92, 182) !important;
+  background-color: rgb(229, 242, 255) !important;
+}

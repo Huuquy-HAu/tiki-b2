@@ -1,0 +1,13 @@
+.Varient_Add{
+    display: block;
+    margin-top: 5px;
+    width: 350px !important;
+    border-radius: 8px;
+}
+.Varient_Add>.ant-select-selector{
+    border-radius: 6px !important;
+    height: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

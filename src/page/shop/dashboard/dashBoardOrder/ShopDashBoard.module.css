@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ShopDashboard{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+   margin-top: 20px;
+}
+.ShopDashboardOrder{
+    display: flex;
+    justify-content: space-between;
+}
+.ShopDashboardList span svg{
+ font-size: 14px !important;
+ padding-top: 4px;
+ color: rgb(63, 76, 247);
+}
+.ShopDashboardOrdermore span svg {
+    font-size: 18px;
+    padding-top: 8px;
+}
+.ShopDashboardOrdermore{
+    color: rgb(63, 76, 247);
+}
+.ShopDashboardOrder h2{
+    color: black;
+    font-size: 16px;
+}
+.ShopDashboardList{
+
+    text-align: center;
+}
+.ShopDashboardList h3{
+    color: rgb(63, 76, 247);
+    font-size: 18px;
+    font-weight: 500;
+}
+.ShopDashboardOrdermoreList{
+    color: rgb(132, 127, 127);
+}
+.Icon svg{
+    color: rgb(132, 127, 127);
+}
+.ShopDashboardListMore{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 768px){
+   .ShopDashboard{ 
+    width: 100%;
+    margin-left: 0px;
+}
+
+   .ShopDashboardListMore {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0;
+   }
+}

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 0.9rem;
+    color: rgb(128, 128, 137);
+    line-height: 20px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: rgb(13, 13, 20);
+}
+
+.name {
+    color: rgb(128, 128, 137);
+    font-weight: 300;
+    font-size: 0.9rem;
+    cursor: context-menu;
+    line-height: 20px;
+}
+
+@media  only screen and (max-width:769px){
+    .link {
+        padding-left: 10px
+    }
+}

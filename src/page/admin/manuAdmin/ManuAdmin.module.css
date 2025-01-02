@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ManuAdmin{
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 1px 0 25px rgba(0,0,0,0.25);
+}
+.ManuAdminAll{
+    display: flex;
+    padding: 15px 10px;
+    color: white;
+}
+.menu{
+    background-color: rgb(0, 119, 255);
+    height: 100vh;
+    color: white;
+    padding-top: 15px;
+    border-top: 1px solid #fff;
+}
+.manuInput{
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    border: 0 !important;
+   
+}
+.manuAll_input{
+    background-color: rgb(0, 119, 255);
+    width: calc(100% - 1px);
+    padding-bottom: 20px;
+}
+.all{
+    font-size: 18px;
+    padding: 15px 14px;
+    color: white;
+}
+.input{
+    display: block;
+    
+    width: 232px;
+    margin: 0 auto;
+    padding: 4px 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+.input::placeholder{
+    opacity: 0.6;
+}
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    border-right:0;
+}

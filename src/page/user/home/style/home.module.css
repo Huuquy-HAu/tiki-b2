@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+.HomePage{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5fa;
+    padding-top: 15px;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.first_slider{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.second_slider{
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    width: 408px;
+    height: 275px;
+    border-radius: 4px;
+}
+@media screen and (max-width: 768px){
+    .HomePage{
+        width: 100%;
+        overflow-x: hidden;
+        background: #005cd6;
+        
+    }
+    .image{
+        display: none;
+        visibility: hidden;
+    }
+    .HotDeal{
+        display: none;
+        visibility: hidden;
+    }
+    .container{
+        width: 100%;
+        margin-left: 0;
+        overflow: hidden;
+    }
+}

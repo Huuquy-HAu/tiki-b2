@@ -1,0 +1,35 @@
+
+
+
+@media screen and (max-width: 768px){
+    .mySwiper33 .swiper-pagination{
+        bottom: 0px;
+    }
+    .mySwiper33 .swiper-pagination .swiper-pagination-bullet{
+        background: #fff;
+        border-radius: 0;
+        width: 10px;
+        height: 2px;
+        margin: 0 2px;
+    }
+    .mySwiper33 .swiper-slide{
+        background: transparent;
+    }
+    .mySwiper33 .swiper-slide img{
+        width: 90vw;
+        /* padding: 5vw; */
+        border-radius: 10px;
+    }
+    .mySwiper33 .swiper-slide-prev{
+        height: 80%;
+        opacity: 1;
+        position: relative;
+        top: 10%;
+    }
+    .mySwiper33 .swiper-slide-next{
+        height: 80%;
+        opacity: 1;
+        position: relative;
+        top: 10%;
+    }
+}

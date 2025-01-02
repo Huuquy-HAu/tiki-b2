@@ -1,0 +1,23 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    height: 160px;
+}
+.banner img{
+    border-radius: 5px;
+}
+.banner img:nth-child(2){
+    width: 800px;
+}
+.banner img:nth-child(1){
+    width: 205px;
+}
+.banner img:nth-child(3){
+    width: 205px;
+}
+@media screen and (max-width: 768px){
+    .banner{
+        display: none;
+    }   
+}

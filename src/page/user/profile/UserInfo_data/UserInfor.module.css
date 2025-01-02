@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.userInfomation {
+  width: 600px;
+}
+.user_info {
+  display: block;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  margin: 4px 0px 12px;
+}
+.formAvatar {
+  background-color: rgb(240, 248, 255);
+  border: 4px solid rgb(194, 225, 255);
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.edit {
+  position: absolute;
+  bottom: 0;
+  right: 7px;
+  background-color: #a6a0a0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit img {
+  width: 12px;
+}
+.acountForm {
+  
+  padding: 16px 50px 16px 16px;
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-right: 1px solid rgb(195, 193, 190);
+}
+.formInfor {
+  padding-top: 18px;
+  display: flex;
+}
+.formControl {
+  display: flex;
+  margin: 10px 0;
+}
+.formP {
+  width: 110px;
+  margin-right: 16px;
+  padding-top: 10px;
+  color: rgb(51, 51, 51);
+  margin-top: 0;
+}
+.formInput {
+  width: 290px;
+  height: 36px;
+  border-radius: 4px;
+  line-height: 20px;
+  outline: none;
+  border: 1px solid rgb(196, 196, 207);
+  padding: 10px 12px;
+}
+.formDate {
+  display: flex;
+}
+.formDate p {
+  color: rgb(51, 51, 51);
+  width: 110px;
+  margin-right: 16px;
+  margin-top: 0;
+}
+.formDatetime {
+  display: flex;
+}
+.formDatetimeInput {
+  width: 100px;
+  height: 32px;
+  padding: 6px 12px;
+  line-height: 34px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-right: 12px;
+}
+.formRadio {
+  display: flex;
+  padding-top: 25px;
+}
+.formRadio p {
+  padding-right: 70px;
+  margin-top: 0;
+}
+.formCountries {
+  display: flex;
+}
+.formCountries p {
+  padding-right: 90px;
+  margin-top: 0;
+}
+#formButton{
+  background-color: rgb(11, 116, 229);
+  cursor: pointer;
+  height: 38px;
+  border: none;
+  width: 150px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 400;
+  margin: 30px 0;
+  margin-left: 125px;
+}
+.avatar{
+  width: 110px;
+  height: 110px;
+}
+.avatarView{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px){
+  .userInfomation{
+    width: 100%;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .formP {
+    margin-right: 0 ;
+    width: unset;
+  }
+  .formInput {
+    width: unset;
+  }
+  .formDatetimeInput {
+    width: 80px;
+  }
+  .formDate p{
+    width: 68px;
+  }
+  .formAvatar {
+    width: 80px;
+    height: 80px;
+  }
+  #formCountriesInput {
+    width: 75%;
+    padding:unset;
+  }
+  .formCountries p{
+    padding-right: 0;
+    width: 30%;
+  }
+  .formDatetimeInput {
+    margin-right: 9px;
+  }
+  .acountForm {
+    padding: 16px;
+  }
+  .formAvatar{
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;}
+    .avatarView img {
+      width: unset;
+      position: relative;
+      right: -2px;
+      height: 30px;
+    }
+    .formInfor {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      align-items: center;
+    }
+    .edit {
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      background-color: #a6a0a0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .formControl {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+  .acountForm{
+    min-height: auto;
+  }
+}
+

@@ -1,0 +1,8 @@
+.silder{
+    height: 235px;
+}
+@media screen and (max-width: 768px){
+    .silder{
+        display: none;
+    }
+}

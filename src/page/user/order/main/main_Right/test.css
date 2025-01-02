@@ -1,0 +1,51 @@
+.cIdCpS{
+    
+        display: block;
+        transition: max-height 0.5s ease-in-out 0s;
+        overflow: hidden;
+        max-height: 0px;
+   
+}
+.HeMLl {
+    display: block;
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out 0s;
+    overflow: hidden;
+}
+.HeMLl .list-container {
+    border-bottom: 1px solid rgb(235, 235, 240);
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    display: grid;
+    gap: 4px;
+}
+.bSkntM {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.HeMLl .item-info {
+    margin-right: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+.HeMLl .item-info__qty {
+    width: 30px;
+    margin-right: 8px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+.HeMLl .item-info__name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    max-width: 156px;
+    font-weight: 400;
+}
+.HeMLl .item-price {
+    font-weight: 500;
+    flex-shrink: 0;
+}

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.User {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+.UserManageHeader {
+    display: flex;
+    margin: 0 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc ;
+}
+.UserManageHeader h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.UserManage {
+    width: 100%;
+    background-color: white;
+}
+.Header_ButtonActive {
+ 
+}
+.HeaderRight :hover{
+    cursor: pointer;
+} 
+.Pagination {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.UserActive {
+    background-color: blue ;
+    color: white;
+}
+.HeaderLeft h3 {
+    cursor: pointer;
+    margin-bottom: 0;
+    color: #206a9d;
+}
+.HeaderRight {
+    border:  1px solid blue;
+    padding: 3px;
+    border-radius: 4px;
+}
+.HeaderRight button {
+    /* background-color: #f4f7f6; */
+  
+    border: none;
+    padding: 5px 15px;
+}
+.Userlist {
+    display: flex;
+    justify-content: center;
+    
+}
+@media screen and (max-width: 768px) {
+    .UserManage {
+        margin: 10px 20px;
+    }
+    .HeaderRight {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .UserManageHeader {
+        margin: 0 10px;
+    }
+    .HeaderRight button {
+        padding: 7px;
+    }
+}

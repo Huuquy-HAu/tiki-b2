@@ -1,0 +1,10 @@
+#list__item_header1{
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mySwiper2 >.swiper-button-next,
+.mySwiper2 >.swiper-button-prev{
+    top: 40%;
+}

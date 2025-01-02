@@ -1,0 +1,30 @@
+.FooterAdd{
+    padding: 20px 30px;
+    background: #fff;
+    margin-top: 15px;
+    border-radius: 20px;
+    position: sticky;
+    bottom: 0;
+    text-align: right;
+    box-shadow: 0 2px 18px rgb(0, 0 ,0,0.15);
+}
+.Button{
+    margin-right: 12px;
+    border-radius: 12px;
+    transition: all 0.3s;
+    color: #40a9ff;
+    border-color: #40a9ff;
+    height: 35px;
+    min-width: 130px;
+    font-size: 14px;
+}
+.Button:hover{
+    background: #40a9ff;
+    color: #fff;
+}
+.Button_primary{
+    border-radius: 12px;
+    height: 35px;
+    min-width: 70px;
+    font-size: 14px;
+}

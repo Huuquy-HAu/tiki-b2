@@ -1,0 +1,33 @@
+.upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    border-radius: 5px;
+    border:1px dashed #cbced5;
+    flex-direction: column;
+}
+.BasicInfo{
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+}
+.lable a{
+    padding: 0 4px;
+}
+.Input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.Input a{
+    width: 180px;
+    margin-left: 20px;
+}
+.star{
+    color:red;
+}
+.info{
+    margin-top: 15px;
+}

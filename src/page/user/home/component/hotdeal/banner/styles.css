@@ -1,0 +1,104 @@
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper4>.swiper-button-next:after, .mySwiper4>.swiper-button-prev:after{
+    font-size: 15px;
+    color: rgb(110, 110, 110);
+}
+.mySwiper4>.swiper-button-next::before, .mySwiper4>.swiper-button-prev::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 230px;
+    
+}
+.mySwiper4>.swiper-button-next::before{
+  background: linear-gradient(to left, white,rgba(255,255,255,0.5) ,transparent);
+}
+.mySwiper4>.swiper-button-prev::before{
+  background: linear-gradient(to right, white,rgba(255,255,255,0.5) ,transparent);
+}
+.mySwiper4>.swiper-button-next,.mySwiper4>.swiper-button-prev{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100rem;  
+    transform: translateY(50%);
+    background: #fff;
+    box-shadow: 0 1px 10px rgba(0,0,0,.2);
+}
+.mySwiper4>.swiper-button-next{
+    right: 4px;
+}
+.mySwiper4>.swiper-button-prev{
+    left: 4px;
+} 
+.swiper-button-next:hover,.swiper-button-prev:hover{
+  opacity: 1;
+}
+.swiper-button-next,.swiper-button-prev{
+  opacity: 1;
+}
+#list__item_header{
+    margin: 0 !important;
+    width: 148px !important;
+}
+#list__item_header:hover{
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+    z-index: 1;
+}
+.mySwiper4>.swiper-pagination{
+  display: none;
+  visibility: hidden;
+}
+.mySwiper4>.swiper-button-prev.swiper-button-disabled,
+.mySwiper4>.swiper-button-next.swiper-button-disabled
+{
+  display: none;
+}

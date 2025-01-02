@@ -1,0 +1,14 @@
+
+.slide{
+  height: 275px;
+  width: 825px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px){
+  .slide{
+    width: 100vw;
+    height: calc(100vw / 3);
+    padding: 0 2vw;
+  }
+}

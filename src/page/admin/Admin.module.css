@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.admin{
+    display: flex;
+    width: 100%;
+}
+.Outlet{
+    margin-left: 280px;
+    width: 100%;
+}

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.DashBoardLeftCommen{
+    width: 49%;
+    margin-left: 8px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.DashboardLeftCommenHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.DashboardLeftCommenHeader h1{
+    font-size: 16px;
+    font-weight: 500;
+}
+.DashboardLeftCommenHeader svg{
+    width: 12px;
+}
+.DashboardHeader{
+    font-size: 14px;
+    color: rgb(18, 222, 32);
+    line-height: 7px;
+    font-weight: 700;
+}
+.Notifications{
+    margin-top:  45px;
+    display: flex;
+}
+.Notifications svg{
+    color: rgb(236, 225, 17);
+    margin-top: 12px;
+    margin-right: 5px;
+}
+.Notifications p{
+    color: black;
+    letter-spacing: 0.5px;
+}
+.a{
+    margin-bottom: 25px;
+}
+.status{
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-gap: 60px ;
+}
+.point{
+    color: rgb(159, 151, 151);
+}
+.good{
+    color: rgb(18, 222, 32); 
+}
+.category{
+    color: black;
+    width: 200px;
+}
+.violation{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+@media screen and (max-width: 768px){
+    .DashBoardLeftCommen{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .category{
+        width: unset;
+    }
+    .status{
+         grid-gap:0px;
+    }
+}

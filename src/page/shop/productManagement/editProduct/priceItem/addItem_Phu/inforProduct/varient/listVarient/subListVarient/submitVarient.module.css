@@ -1,0 +1,65 @@
+.Table_AddVarient{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    
+}
+.varient{
+    width: 14%;
+}
+.price{
+    width: 17%;
+}
+.special_Price{
+    width: 14%;
+}
+.storage{
+    width: 12%;
+}
+.productSKU{
+    width: 20%;
+}
+.sell{
+    width: 12%;
+}
+.Table_AddVarient th{
+    height: 56px;
+    line-height: 56px;
+    background: #f2f3f7;
+    border: solid 1px rgb(224, 224, 224);
+}
+.Table_AddVarient .header{
+    border: solid 1px black;
+}
+.Table_AddVarient tr{
+    height: 56px;
+}
+.tr_varient{
+    border: solid 1px rgb(224, 224, 224);
+}
+.tr_varient>td{
+    border: solid 1px rgb(224, 224, 224);
+}
+.sellUp{
+    width: 54px;
+    height: 28px;
+    display: flex;
+    margin: 0 auto;
+}
+.sellUp>div{
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+}
+.sellUp>div::before{
+    border-radius: inherit; 
+}
+.Varient_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}

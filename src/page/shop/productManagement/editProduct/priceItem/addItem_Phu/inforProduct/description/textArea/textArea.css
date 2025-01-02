@@ -1,0 +1,20 @@
+.description .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+    min-height: 450px;
+}
+.description .ck.ck-editor__editable_inline,
+.description .ck-editor__main,
+.description .ck-blurred{
+    min-height: 450px !important;   
+}
+.description .ck.ck-editor__editable_inline{
+    border-radius: 0 0 12px 12px !important;
+}
+.description .ck.ck-editor__editable_inline{
+    padding: 0 12px;
+}
+.description .ck.ck-editor__editable_inline p{
+    margin: 4px 0;
+}
+.description{
+    margin-top: 20px;
+}

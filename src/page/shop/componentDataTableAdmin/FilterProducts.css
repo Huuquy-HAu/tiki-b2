@@ -1,0 +1,73 @@
+.FilterProducts_filter__Y3lFM .ant-input-affix-wrapper {
+    width: 70%;
+}
+
+.FilterProducts_filter__Y3lFM .ant-input-group.ant-input-group-compact>.ant-select:first-child>.ant-select-selector {
+    border-radius: 12px !important;
+}
+
+.FilterProducts_filter__Y3lFM .ant-input-group.ant-input-group-compact>*:last-child {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.ant-table-cell {
+    width: 24%;
+}
+
+.ant-table-selection-column {
+    width: 4%;
+}
+
+.FilterProducts_width33__FZNMn .ant-select-selection-item {
+    font-size: 14px;
+}
+
+.red {
+    color: red;
+}
+
+.FilterProducts_width33__FZNMn .ant-input-group.ant-input-group-compact {
+    display: flex !important;
+    width: 100%;
+}
+
+.FilterProducts_width33__FZNMn .ant-input-affix-wrapper {
+    border-radius: 12px !important;
+    padding-left: 23px;
+    width: 100%;
+}
+
+.FilterProducts_width33__FZNMn .ant-input-group-addon {
+    background-color: unset !important;
+}
+
+.ant-table-wrapper {
+    position: relative;
+}
+
+.ant-table-thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.checkboxGreen {
+    background: rgb(31, 183, 56);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-1500%, 0);
+    bottom: 14px;
+}
+
+.checkboxRed {
+    background: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-1500%, 0);
+    bottom: 14px;
+}

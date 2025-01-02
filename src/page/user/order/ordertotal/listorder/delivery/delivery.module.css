@@ -1,0 +1,18 @@
+.Delivery{
+    background: rgb(240, 248, 255);
+    border: 1px solid rgb(194, 225, 255);
+    border-radius: 10px;
+    padding: 16px;
+    display: grid;
+    row-gap: 12px;
+    z-index: 0;
+    width: 500px;
+    height: 130px;
+}
+.img{
+   display: flex;
+   align-items: center;
+}
+.cost{
+    color: rgba(0, 128, 0, 0.66);
+}

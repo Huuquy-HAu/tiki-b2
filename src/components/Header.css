@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.HeaderTopLeft {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 0%;
+}
+.HeaderBody {
+  width: 1270px;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Header {
+  background-color: rgb(26, 148, 255);
+}
+.HeaderTopContainer {
+  padding-top: 16px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.HeaderTopContainerLogo img {
+  font-size: 14px;
+  height: 40px;
+}
+.HeaderTopContainerRight {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  justify-content: center;
+  margin-right: 50px;
+}
+.HistorySeach {
+  height: 400px;
+  width: 100%;
+}
+.SearchWord:hover {
+  cursor: pointer;
+  background-color: rgba(27, 168, 255, 0.1);
+}
+.SearchWord {
+  width: 100%;
+}
+.ShowCoverInput:hover {
+  display: block;
+}
+.componentHeaderInput {
+  width: 680px;
+  padding: 0 12px;
+  height: 44px;
+  flex: 1 1 0%;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  border: 0px;
+}
+.componentHeaderInput:focus + .ShowCoverInput{
+    z-index: 10000000000000000000;
+    display: block;
+ 
+}
+
+/* .componentHeaderInput:focus ~ .HeaderMiddleListData {
+    display: none; */
+
+.HeaderbuttonSeach {
+  background-color: rgb(13, 92, 182);
+  width: 120px;
+  border-radius: 0px 3px 3px 0;
+  display: flex;
+  padding: 1px 6px;
+  align-items: center;
+  color: white;
+  height: 44px;
+  border: none;
+  outline: none;
+}
+.icon-seach {
+  font-weight: 500;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+.SearchWord {
+  text-align: center;
+}
+.SearchWord span svg {
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 6px;
+  /* width: 20px; */
+  /* height: 20px; */
+  color: rgba(0, 0, 255, 0.419) !important;
+
+  font-size: 22px !important;
+}
+.HeaderTopContainerInput {
+  display: flex;
+  justify-content: center;
+  right: 35px;
+  position: absolute;
+}
+.HeaderUserImg {
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+}
+.HeaderTopContainerUser {
+    display: flex;
+    color: white;
+    margin: 5px 0 0 0;
+    position: relative;
+    
+}
+.HeaderTopContainerUser img {
+    border-radius: 50%;
+}
+.HeaderUserLoginContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+.HeaderUserLoginUser {
+  font-size: 13px;
+}
+.HeaderUserLogin {
+  font-size: 11px;
+}
+.HeaderUserLogin span{
+    color: white;
+}
+.HeaderUserImgdown {
+  width: 16px;
+  height: 16px;
+}
+.HeaderCart {
+  width: 32px;
+  height: 32px;
+}
+.HeaderTopContainerCartWallet {
+  position: relative;
+  display: flex;
+  margin-left: 16px;
+}
+.HeaderCartTitle {
+  position: absolute;
+  padding: 0 7px;
+  height: 20px;
+  top: -2px;
+  right: -6px;
+  background-color: rgb(253, 216, 53);
+  border-radius: 50%;
+}
+.HeaderWalletCart {
+  position: relative;
+}
+.HeaderCartText {
+  font-size: 12px;
+  display: flex;
+  color: white;
+  align-items: flex-end;
+}
+.HeaderMiddle {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.HeaderMiddleListData span {
+  color: white;
+
+  text-decoration: none;
+  margin-right: 12px;
+  font-size: 13px;
+}
+.HeaderMiddleListData {
+  position: absolute;
+  left: 155px;
+}
+.HeaderMiddleListData:hover span{
+  cursor: pointer;
+}
+.HeaderSellerText {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 16px;
+}
+.HeaderSeller {
+  padding: 0 8px;
+  margin-bottom: 12px;
+  height: 22px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.HeaderSeller img {
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.cursorPoiter {
+  cursor: pointer;
+}
+.HeaderMobie {
+  width: 100%;
+}
+.HeaderMobieTop {
+  display: flex;
+  padding: 0 15px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderMobieMidle {
+  padding: 10px;
+}
+.HeaderMobieText {
+  width: 98%;
+  height: 24px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+}
+.HeaderMobieBottom {
+  overflow-x: auto;
+  display: flex;
+}
+.HeaderMobieBottom a {
+  text-decoration: none;
+  color: white;
+  min-width: 20%;
+  font-size: 12px;
+}
+.HeaderMobieLogo {
+  position: absolute;
+  left: 50%;
+}
+.InputCoverItemTop {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.ShowCoverInput {
+   border-top:  1px solid rgb(225, 225, 225);
+    box-shadow: rgb(0 0 0 / 28%) 0px 6px 12px 0px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 99999999 !important;
+    width: calc(100% - 120px);
+    display: none;
+}
+.InputCoverItemTop p {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.InputCoverItemTop img {
+  width: 25px;
+}
+.HistorySeach {
+  border-bottom:  1px solid rgb(225, 225, 225);
+}
+.HeaderCoverInput {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  height: 35px;
+  align-items: center;
+  padding: 0 24px;
+}
+.HeaderCoverInputText {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+.SearchWord {
+    margin-left: 20px;
+    font-weight: 700;
+   padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.seach-icon {
+    margin-right: 15px;
+}
+.SeachInputDataText {
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+}
+.ListHistorySeach {
+  display: flex;
+
+  font-size: 13px;
+  font-weight: 500;
+  align-items: center;
+
+}
+.ListHistorySeach:hover {
+  background-color: rgba(27, 168, 255, 0.1);
+}
+.ListHistorySeach img {
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+}
+.ShowCoverInputListItem,
+.CatogoryAttenion {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgb(242, 242, 242);
+  padding: 12px 8px;
+}
+.InputCoverLists {
+  width: 32%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 10px;
+
+  background-color: rgb(250, 250, 250);
+}
+.InputCoverLists p {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+.InputCoverLists:hover {
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;
+    cursor: pointer;
+}
+.CatogoryList {
+  width: 24%;
+  text-decoration: none;
+}
+.CatogoryListTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 4px;
+}
+.CatogoryListTitle img {
+  width: 50px;
+  height: 50px;
+}
+.CatogoryListTitle p {
+  text-align: center;
+  margin: 0;
+}
+.CatogoryList:hover {
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+  cursor: pointer;
+  z-index: 99999999 !important;
+}
+.CatogoryList p {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.HeaderTopContainerUser:hover .header_navbar_iteam_mypage_selec {
+  display: block;
+}
+
+.header_navbar_iteam_mypage_selec {
+  color: black;
+  width: 200px;
+  height: 160px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  position: absolute;
+  right: -25px;
+  top: 30px;
+  background-color: #fff;
+  display: none;
+  animation: headerNavbarItemNoti1 ease-in 0.3s;
+  z-index: 999999 !important;
+  cursor: pointer;
+  padding: 20px;
+  /* margin-top: 12px; */
+}
+
+/* .header_navbar_iteam_mypage_selec-item:hover {
+    color: red;
+  }
+   */
+.header_navbar_iteam_mypage_selec-item {
+  padding-bottom: 5px;
+}
+.header_navbar_item_mypage:hover .header_navbar_iteam_mypage_selec {
+  display: block;
+}
+
+.header_navbar_iteam_mypage_selec::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-top: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
+  position: absolute;
+  top: -3px;
+  right: 30px;
+  transform: rotate(45deg) translate(-50%);
+  background-color: rgb(255, 255, 255);
+}
+@media only screen and (min-width: 769px) {
+  .HeaderMobie {
+    display: none;
+  }
+}
+
+
+@media  only screen and (min-width:769px) and (max-width:992px){
+    .HeaderBody {
+        display: none;
+    }
+    .HeaderMobie {
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px){
+    .HeaderBody{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .HeaderMobieBottom {
+        width: 100vw;
+        padding: 0 0 5px 15px;
+    }
+    .HeaderMobieBottom::-webkit-scrollbar{
+        display: none;
+    }
+    .HeaderMobieTop img:last-child{
+        width: 20px;
+        height: 20px;  
+    }
+    .HeaderMobieTop img:nth-child(2){
+        height: 20px;
+    }
+    .HeaderMobieTop img:nth-child(1){
+        height: 11px;
+    }
+    .HeaderMobieTop{
+        padding: 10px 20px 0 16px;
+        align-items: baseline;
+    }
+    .HeaderMobieText{
+        padding: 0 8px;
+        font-size: 13px;
+        font-weight: 400;
+        width: 100%;
+        height: 30px;
+    }
+    .HeaderMobieText::placeholder{
+        opacity: 0.8;
+    }
+    .Header{
+        background: rgba(0 ,92, 214,1);
+        margin-bottom: -10px
+    }
+}

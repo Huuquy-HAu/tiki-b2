@@ -1,0 +1,82 @@
+.hello_ant-input-number-input{
+    width: 100% !important;
+    height: 36px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    transition: all .5s;
+}
+.hello_ant-input-number-input:hover{
+    border-color: #1a71ff;
+}
+[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity{
+    position: relative;
+    width: 100%;
+}
+.quantity:hover .hello_ant-input-number-input{
+    border-color: #1a71ff;
+}
+.quantity:hover .btn_spin__imputNumber{
+    visibility: visible;
+    opacity: 1;
+}
+.btn_spin__imputNumber{
+    position: absolute;
+    width: 20px;
+    /* height: 10px; */
+    background: transparent;
+    height: 18px;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-width: 0 0 0 1px;
+    visibility: hidden;
+    transition: all .5s;
+    opacity: 0;
+    cursor: pointer;
+}
+.btn_descriese{
+    top: 1px;
+    border-bottom-width: 1px;
+}
+.btn_inscese{   
+    bottom: 1px;
+}
+.icon_InputNumber{
+    color:#1a71ff;
+}
+.hello_ant-input-number-input::placeholder{
+    opacity: 0.65;
+}
+.Input_MaxLength__Phu{
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 8px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.Input_MaxLength__Phu:hover{
+    border-color: #1a71ff;
+}
+.Input_maxLength{
+    position: relative;
+}
+.Limited_input{
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}

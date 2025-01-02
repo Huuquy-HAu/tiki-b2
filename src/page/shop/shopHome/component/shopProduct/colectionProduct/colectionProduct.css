@@ -1,0 +1,28 @@
+.tab_colection {
+    color: Black;
+    background: #fff;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+.tab_colection .ant-tabs-nav {
+    left: 0;
+}
+.tab_colection .ant-tabs-nav{
+    width: 200px;
+}
+
+.tab_colection .ant-tabs-content-holder{
+    min-height: 100vh;
+}
+
+.tab_colection .ant-tabs-tabpane{
+    padding: 0 !important;
+}
+@media screen and (max-width: 768px){
+    .tab_colection{
+        border-radius: 0;
+    }
+    .tab_colection .ant-tabs-nav{
+        width: 100vw;
+    }
+}

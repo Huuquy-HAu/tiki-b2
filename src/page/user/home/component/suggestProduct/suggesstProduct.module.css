@@ -1,0 +1,221 @@
+.header{
+    background: #fff;
+    height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.header h3{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    width: 150px;
+    height: 85px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+.item.active{
+    border: 1px solid rgb(13, 92, 182);
+}
+.item.active h4{
+    color: rgb(13, 92, 182);
+}
+.item img{
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+}
+.item h4{
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0;
+}
+.PruductList{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.Card{
+    background: #fff;
+    width: calc(100% / 6);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.Card:hover{
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+    z-index: 1;
+}
+.Card img{
+    width: 100%;
+}
+.Card ul li{
+    font-size: 14px;
+    padding: 0;
+    margin-right: 0 !important;
+    cursor: pointer;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    flex-shrink: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.price span{
+    margin-right: 10px;
+}
+.price span:last-child{
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1;
+    padding: 2px 3px;
+    border: 1px solid rgb(255, 66, 78);
+    background: rgba(255, 66, 78,0.15);
+    border-radius: 2px;
+}
+.price.discount {
+  color: rgb(255, 66, 78);
+}
+.price:not(.discount) > span:last-child {
+  display: none;
+}
+.info {
+  padding: 10px 0 0 0;
+  flex: 1;
+  margin-bottom: 10px;
+}
+.rate > span {
+  position: relative;
+  top: 1px;
+}
+.info h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+  font-weight: 500;
+}
+.loadMore {
+  margin: 0 auto;
+  margin-top: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+  width: 240px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(13, 92, 182);
+  color: rgb(13, 92, 182);
+  font-size: 13px;
+  text-align: center;
+  transition: all 0.3s linear;
+  margin-bottom: 30px;
+}
+.loadMore:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(13, 92, 182);
+  border-color: rgb(13, 92, 182);
+}
+.sugguest.active {
+  position: fixed !important;
+  /* position: sticky !important; */
+  width: 1240px;
+  top: 0;
+  height: 150px;
+  background: #f5f5fa;
+  z-index: 100000;
+  padding-bottom: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.product_list.active {
+  margin-top: 155px;
+}
+.SuggestProduct.active {
+  position: fixed !important;
+  width: 1240px;
+  top: 0;
+}
+@media screen and (max-width: 768px) {
+  .PruductList {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .Card {
+    width: 50%;
+  }
+  .Navigation {
+    justify-content: start;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .item {
+    width: 22vw;
+    padding: 0;
+    margin-right: 5px;
+    flex-shrink: 0;
+  }
+  .item h4 {
+    margin: 0;
+    margin-top: 5px;
+    line-height: 14px;
+  }
+  .item img {
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+  }
+  .sugguest.active {
+    width: 100vw;
+    /* margin-bottom: -10px; */
+  }
+  .sugguest {
+    width: 100vw;
+    padding: 0 0 5px 0;
+    background: #d6d6d6;
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+  .header {
+    border-radius: 0;
+    margin-bottom: 5px;
+    width: 100vw;
+  }
+  .Navigation::-webkit-scrollbar {
+    display: none;
+  }
+  .sugguest.active {
+    max-width: 100%;
+  }
+  .PruductList {
+    margin-bottom: 0;
+  }
+  .product_list.active {
+    margin-top: 145px;
+  }
+}

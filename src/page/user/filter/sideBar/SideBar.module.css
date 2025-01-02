@@ -1,0 +1,165 @@
+.container {
+    max-width: 250px;
+    border-right: 1px solid rgba(219, 219, 219, 0.223);
+}
+
+.nav {
+    padding: 0px 8px 12px 16px;
+    border-bottom: 1px solid rgba(219, 219, 219, 0.333);
+}
+
+.title {
+    margin: 0;
+    padding: 14px 0px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.93);
+}
+
+.nav__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: rgba(36, 36, 36, 0.849);
+    display: block;
+    font-weight: 400;
+    display: -webkit-box;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;  /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom:10px;
+    padding: 0 10px 0 0;
+}
+
+.list_products_item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.list_products__name {
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.list_products__btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(13, 92, 182);
+    cursor: pointer;
+}
+
+.price p {
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 60px;
+    font-size: 0.9rem;
+    background: rgb(238, 238, 238);
+    margin-bottom: 5px;
+}
+
+.price label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.icon {
+    position: relative;
+    top: 1px;
+}
+
+.gourp {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.gourp input {
+    width: 50%;
+    outline: none;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(155, 155, 155, 0.522);
+}
+
+.seperate {
+    position: relative;
+    top: -2px;
+    margin: 0 5px;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    padding: 5px 20px;
+    border: 1px solid rgba(4, 155, 242, 0.777);
+    color: rgb(28, 109, 250);
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+
+.list_products_item input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid rgba(133, 133, 133, 0.795);
+}
+
+.list_products_item input[type="checkbox"]::after {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 1px;
+    width: 5px;
+    height: 1.5px;
+    display: none;
+    transform: rotate(45deg);
+    z-index: 1;
+    background-color: #fff;
+}
+
+.list_products_item input[type="checkbox"]::before {
+    position: absolute !important; 
+    content: '' !important; 
+    top: 5px !important;
+    width: 10px !important;
+    right: 0px !important;
+    height: 1.5px !important;
+    display: none;
+    z-index: 1;
+    transform: rotate(-50deg) !important;
+    background-color: #fff !important;
+}
+
+.list_products_item input[type="checkbox"]:checked:after,
+.list_products_item input[type="checkbox"]:checked:before {
+    display: block;
+}
+
+.list_products_item input[type="checkbox"]:checked {
+    background-color: red;
+}

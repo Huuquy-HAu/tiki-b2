@@ -1,0 +1,61 @@
+.products img {
+    width: 65px;
+    height: 65px;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+.products {
+    display: flex;
+}
+
+.contentScore {
+    display: flex;
+    margin-right: 8px;
+    justify-content: space-around;
+    position: relative;
+}
+
+/* .checkboxGreen {} */
+
+.checkboxRed {
+    background: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-1500%, 0);
+    bottom: 14px;
+}
+
+.endProduct {
+    color: red;
+    font-weight: 600;
+}
+
+.modalUpdate {
+    display: flex;
+    align-items: center;
+}
+
+.modalUpdate p {
+    margin-right: 6px;
+}
+
+.modalInput {
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.container {
+    width: 20% !important;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 8px;
+}

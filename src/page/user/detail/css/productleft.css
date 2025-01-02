@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: tikiFont;
+}
+@font-face {
+  font-family: tikiFont;
+  src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+.kfTKQv {
+  margin: 0px 12px;
+  width: 1px;
+  /* background: rgb(242, 242, 242); */
+  flex-shrink: 0;
+}
+.webpimg-container {
+  cursor: pointer;
+}
+.productleft {
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+#main {
+  width: 444px;
+  height: 444px;
+}
+.img-small {
+  border-radius: 4px;
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+  margin: 16px 0 0 16px;
+}
+#banner {
+  margin: 32px 0 0 12px;
+  max-width: 300px;
+}
+.contact {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+}
+.contact img {
+  margin: 0px 8px;
+  cursor: pointer;
+}

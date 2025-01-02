@@ -1,0 +1,96 @@
+.Item{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.Item img{
+    width: 100%;
+}
+.price{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price span:first-child{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 66, 78);
+}
+.price span:last-child{
+    padding: 0px 2px;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    
+    border: 1px solid rgb(255, 66, 78);
+    border-radius: 2px;
+    background-color: rgb(255, 240, 241);
+    color: rgb(255, 66, 78);
+    display: inline-block;
+    height: 14px;
+}
+.deal{
+    background-color: rgb(255, 170, 175);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+.deal span:last-child{
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0px 0px 0px 6px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+.new{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(255, 66, 78);
+    height: 20px;
+    border-radius: 10px;
+    min-width: 25px;
+}
+.end{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(255, 66, 78);
+    height: 20px;
+    border-radius: 10px;
+    width: 85%;
+}
+.end::after{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+    background-image: url('https://frontend.tikicdn.com/_desktop-next/static/img/fire_icon.svg');
+    transform: scale(1.5);
+}
+.progress{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(255, 66, 78);
+    height: 20px;
+    border-radius: 10px;
+    width: 40%;
+}

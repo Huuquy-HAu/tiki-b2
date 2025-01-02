@@ -1,0 +1,11 @@
+.RateStar .ant-rate-star:not(:last-child) {
+    margin-right: 0;
+}
+
+.RateStar .ant-rate-star span svg {
+    color: unset;
+    font-size: 12px;
+}
+.RateStar .ant-rate-star-first{
+    width: 65%;
+}

@@ -1,0 +1,17 @@
+  .avatar-uploader .ant-upload.ant-upload-select-picture-card{
+    width: 100% !important;
+    height: 200px;
+  }
+  #formCountriesInput {
+    padding-right: 280px;
+    padding-left: 20px;
+    border-radius: 4px;
+    height: 34px;
+    border: 1px solid rgb(204, 204, 204);
+  }
+  @media screen and (max-width: 768px){
+    #formCountriesInput {
+      width: 75%;
+      padding:unset;
+    }
+  }

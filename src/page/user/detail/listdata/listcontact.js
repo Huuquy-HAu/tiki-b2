@@ -1,0 +1,22 @@
+export const listcontact = [
+  <img
+    src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-facebook.svg"
+    alt="social-facebook"
+  ></img>,
+  <img
+    src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-messenger.svg"
+    alt="social-messenger"
+  ></img>,
+  <img
+    src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-pinterest.svg"
+    alt="social-pinterest"
+  ></img>,
+  <img
+    src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-twitter.svg"
+    alt="social-twitter"
+  ></img>,
+  <img
+    src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-copy.svg"
+    alt="social-copy"
+  ></img>,
+];

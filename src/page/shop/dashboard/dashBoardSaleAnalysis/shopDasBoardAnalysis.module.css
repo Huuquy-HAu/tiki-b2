@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.shopDasBoardAnalysis{
+    width: 49%;
+    padding: 15px;
+    background-color: white;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+.shopDasBoardAnalysisHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.shopDasBoardAnalysisHeader h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.ArrowForwardIos svg {
+    font-size: 15px;
+    padding-top: 3px;
+} 
+.date{
+    font-size: 14px;
+    color: rgb(114, 109, 109);
+    padding-top: 10px;
+}
+.titalmoney{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    grid-gap: 20px ;
+}
+.money{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.money span {
+    font-size: 10px;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-right: 1px;
+    opacity: 0.8;
+}
+.active{
+    border-bottom: 3px solid rgb(59, 17, 247);
+    color: rgb(59, 17, 247) ;
+}
+.turnover{
+    opacity: 0.8;
+}
+.yesterday{
+    font-size: 12px;
+    margin-top: 5px;
+   color: rgba(0, 0, 0, 0.678);
+}
+.yesterday span{
+    font-size: 15px;
+    color: black;
+}
+.trent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px){
+    .shopDasBoardAnalysis{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+}

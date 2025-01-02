@@ -1,0 +1,61 @@
+.user-createShop{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+}
+.user-createShop h1{
+    text-align: center;
+    padding: 42px;
+    color: blue;
+}
+.user-createShop button{
+    width: 100%;
+    padding: 12px;
+    background: rgb(47, 3, 183);
+    color: white;
+    border: none;
+    border-radius:6px ;
+}
+.user-createShop-container{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+}
+.user-createShop-container p{
+    margin-bottom: 6px;
+}
+.user-createShop-container input{
+    padding: 12px;
+    width: 100%;
+}
+.user-createShop-input{
+    margin-bottom: 12px;
+}
+.user-createShop-input input{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none; 
+}
+.user-createShop-input input:focus{
+    border-color: rgb(26, 148, 255);
+}
+.user-createShop-input input:hover{
+    border: 1px solid rgb(26, 148, 255);
+    transition: all 0.5s ease-out 0s;
+}
+.user-createShop-select{
+    width: 100% !important;
+    padding: 12px !important;
+    outline:none;
+    border: 1px solid #ccc;
+    border-radius:6px ;
+    color: rgb(110, 110, 110);
+}
+.user-createShop-select:hover{
+    border-color: rgb(26, 148, 255);
+    transition: all 0.5s ease-out 0s;
+}
+.user-createShop-select:focus{
+    border-color: rgb(26, 148, 255);
+}

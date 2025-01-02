@@ -1,0 +1,111 @@
+.sale_item {
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 132px;
+  margin-top: 20px;
+}
+.sale_item svg {
+  width: 100%;
+  height: 132px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 1px 3px);
+}
+.sale_item .sale_container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sale_container img {
+  object-fit: contain;
+  border-radius: 8px;
+  filter: grayscale(1);
+  opacity: 0.4 !important;
+  position: absolute;
+  top: 6px;
+  left: 29px;
+  height: 120px;
+}
+
+.sale_icon {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  width: calc(100% - 132px);
+}
+
+.sale_icon svg {
+  position: absolute;
+  top: 5px;
+  right: 28px;
+  transform: translate(8px, -8px);
+  display: block;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  line-height: 0px;
+  width: 40px !important;
+  height: 40px !important;
+}
+.sale_value {
+  position: absolute;
+  top: 7px;
+  left: 167px;
+}
+.sale_value h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  max-height: 24px;
+  color: rgb(120, 120, 120);
+}
+.sale_value p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  max-height: 20px;
+  color: rgb(120, 120, 120);
+}
+
+.sale_valueSub {
+  position: absolute;
+  bottom: 9px;
+  right: 221px;
+}
+.sale_valueSub p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  max-height: 20px;
+  color: rgb(120, 120, 120);
+}
+.sale_information {
+  position: absolute;
+  width: 87px;
+  height: 64px;
+  bottom: -5px;
+  right: 18px;
+}

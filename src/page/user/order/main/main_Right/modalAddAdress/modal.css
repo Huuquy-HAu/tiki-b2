@@ -1,0 +1,48 @@
+.UpdateAddress .ant-space-item{
+    margin-top: 20px;
+   
+    height: 60px;
+    width: 100%;
+    margin-right: 20px;
+
+}
+.ant-space-item input{
+    height: 40px;
+}
+.form-info{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+.css-13r4j3i .MuiTextField-root.textaddress{
+    width: 471px;
+    margin-left: 1px;
+}
+.warning1{
+    font-size: 0.8rem;
+  
+    color: #f00e0e;
+}
+.customer_infonp:not(:first-child){
+    margin-left: 1rem;
+}
+.customer_infor{
+    display: flex;
+    justify-content: space-between;
+}
+.customer_infor button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ant-radio-wrapper{
+    width: 100%;
+}
+.ant-radio-group{
+    width: 100% !important;
+}
+.itemad{
+    color: rgb(128, 128, 137);
+}

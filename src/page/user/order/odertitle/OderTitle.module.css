@@ -1,0 +1,100 @@
+.user_Oder_Listtitle{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  
+}
+.active{
+   color: rgb(13, 92, 182);
+   border-bottom: 2px solid rgb(13, 92, 182);
+}
+.Header_Title {
+    padding-top: 15px;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.Global_OderList {
+    background-color: #f5f5fa;
+    width: 970px;
+    /* width: 950px;
+    float: right; */
+}
+.User_Oder_Title {
+    width: 20%;
+    padding: 12px 0; 
+    text-align: center; 
+    color: rgb(99, 91, 91);
+}
+.User_Oder_Title:hover {
+    cursor: pointer;
+}
+.TitleInput {
+    padding: 10px 12px;
+    border : 1px solid rgb(196, 196, 207);
+    border-radius: 4px;
+    display: flex;
+    flex: 1 1 0%;
+    outline: none;
+    height: 36px;
+    width: 100%;
+}
+.Input {
+    position: relative;
+    padding: 15px 0 0 0;
+}
+.Search_Right {
+    position: absolute;
+    top: 35px;
+    transform: translate(0%, -50%);
+    right: 20px;
+    padding-left: 16px;
+    border-left: 3px solid rgb(242, 242, 242);
+    color: rgb(11, 116, 229);
+}
+.Search_Right:hover{
+    cursor: pointer;
+}
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+@media  only screen and (max-width:768px){
+    .user_Oder_Listtitle{
+        display: flex;
+        overflow-x: auto;   
+        justify-content: space-between;
+    
+    } 
+    .Global_OderList {
+        width: 100%;
+    }
+    .user_Oder_Listtitle::-webkit-scrollbar{
+        display: none;
+    }
+    .User_Oder_Title {
+        width: 33%;
+        flex-shrink: 0;
+    } 
+    .TitleInput::placeholder{
+        opacity: 0;
+    }
+    .TitleInput {
+        font-size: 16px;
+    }  
+    .EmptyOder {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .EmptyOder img{
+        width: 100%;
+    }
+}
+
+

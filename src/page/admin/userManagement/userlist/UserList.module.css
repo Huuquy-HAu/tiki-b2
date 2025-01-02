@@ -1,0 +1,92 @@
+.Userlist {
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.User_ProfileLeft {
+    display: flex;
+}
+.ListUserProfile {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow:  0px 0px 2px rgb(0 0 0 / 10%); */
+    border-bottom: 1px solid #ccc ;
+    border-radius: 4px 4px 0 0;
+    
+}
+.User_ProfileLeft img {
+    width: 55px;
+   
+}
+
+.User_ProfileLeft h4 {
+    color: rgb(89, 91, 211);
+    font-weight: 480;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 4px 24px 0 0   ;
+}
+
+.ShowUserdata {
+    width: 100%;
+    margin-bottom: 30px;
+    /* box-shadow: 1px 2px 2px rgba(0,0,0,15); */
+    border: 1px solid rgb(0, 81, 255) ;
+    border-radius: 4px 4px 0 0;
+}
+.SetUserOptions {
+    display: flex;
+    background-color: rgb(46, 144, 255);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    /* box-shadow: rgb(0 0 0 / 10%) 0px 0px 2px; */
+}
+.UserIDtext {
+    color: red;
+    font-size: 15px;
+    margin: 5px 15px 0 0;
+
+} 
+.Options button {
+  background: rgb(255, 255, 255);
+  margin-right: 4px;
+  color:rgb(0, 0, 0);
+  padding: 2px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  border: 0;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+.Options button:hover {
+    cursor: pointer;
+}
+.Time_UserStart span {
+    font-weight: bold;
+    margin-right: 5px;
+    color:#fff 
+}
+.Time_UserStart {
+    color:#fff;
+}
+.Option_Active{
+    background: #000;
+}
+@media screen and (max-width: 768px){
+    .User_ProfileLeft img {
+        width: 40px;
+    }
+    .User_ProfileLeft h4 {
+        font-size: 15px;
+    }
+    .UserIDtext span{
+        font-size: 14px;
+    }
+    .Time_UserStart span{ 
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.manuUser,
+.header {
+  display: flex;
+  padding-left: 35px;
+  background-color: rgb(245, 245, 250);
+}
+.iconProfile {
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.manuUser a {
+  color: #000;
+}
+
+.header {
+  width: 100%;
+  padding: 15px 0px;
+}
+.manuUserContainer{
+  width: 280px;
+}
+.headerList {
+  width: 100%;
+  margin-right: 10px;
+}
+.headerList div {
+  width: 100%;
+  padding: 7px 40px;
+}
+.headerList .icon {
+  width: 39px;
+  padding-right: 15px;
+  font-size: 24px;
+}
+#manuList {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.icon svg {
+  color: black;
+  opacity: 0.3;
+}
+#manuList:hover {
+  color: #000;
+}
+.manuListSmartPhone{
+  display: none;
+}
+.ProfileManuLeft{
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .manuUserContainer {
+    display: none;
+  }
+  .manuUserContainer ant-drawer-body{
+    padding: 0;
+    flex-grow: 1;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.5715;
+    word-wrap: break-word;
+    width: 250px;
+  }
+.manuListSmartPhone{
+  display: block;
+}
+}

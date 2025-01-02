@@ -1,0 +1,22 @@
+.productTabs .ant-tabs-tab{
+    color: rgb(32, 32, 32);
+    font-weight: 500;
+    font-size: 15px;
+}   
+
+.productTabs.ant-tabs .ant-tabs-nav{
+ left: 16px;
+}
+
+.productTabs .ant-tabs-content-holder{
+    margin-top: 55px;
+    margin-bottom: -50px;
+}
+@media screen and (max-width: 768px){
+    .productTabs.ant-tabs .ant-tabs-nav{
+        width: 100vw;
+        overflow-x: auto;
+        padding: 0 12px;
+        left: 0;
+    }
+}

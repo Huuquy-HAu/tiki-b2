@@ -1,0 +1,46 @@
+.Tranform{
+    padding: 20px;
+    background: #fff;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.Option{
+    width: 350px !important;
+    display: block;
+    border-radius: 6px;
+
+}
+.showmore{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.policy{
+    width: 350px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 35px;
+    padding: 0 12px;
+    display: block;
+    margin-top: 5px;
+}
+.allPolicy{
+    margin-top: 15px;
+}
+.title{
+    margin-bottom: 5px;
+}
+.Tranform h4{
+    margin-bottom: 5px;
+}
+.sizeInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.dangered{
+    margin-top: 15px;
+}

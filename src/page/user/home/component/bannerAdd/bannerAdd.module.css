@@ -1,0 +1,17 @@
+.BannerAdd{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.BannerAdd img{
+    width: 295px;
+    height: 150px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px){
+    .BannerAdd{
+        display: none;
+        visibility: hidden;
+    }
+}

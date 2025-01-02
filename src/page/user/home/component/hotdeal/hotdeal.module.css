@@ -1,0 +1,55 @@
+.HotDeal{
+    width: 740px;
+    height: 275px;
+    border-radius: 5px ;
+    background: #fff;
+    /* padding: 10px; */
+}
+.header{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eBPnHV{
+    animation: fadeIn 0.8s infinite linear;
+    /* transform: scale(1.2); */
+}
+
+.right_header_img{
+    display: flex;
+}
+@keyframes fadeIn {
+    0%{
+        transform: scale(0.8) ;
+        opacity: 0.8;
+    }
+    50%{
+        transform: scale(1.2) ;
+        opacity: 1;
+    }
+    to{
+        transform: scale(0.8) ;
+        opacity: 1;
+    }
+}
+.count_down_item{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0px 4px;
+    padding: 0px 3px;
+    background-color: rgb(255, 66, 78);
+    border-radius: 4px;
+    color: white;
+}
+.header_link{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(11, 116, 229);
+    font-weight: 400;
+    cursor: pointer;
+}

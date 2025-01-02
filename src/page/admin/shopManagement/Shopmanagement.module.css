@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ShopManageHeader {
+    display: flex;
+    margin: 0 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc ;
+}
+.ShopManageHeader h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.ShopManage {
+    background-color: #f4f7f6;
+}
+.Header_ButtonActive {
+ 
+}
+.HeaderRight :hover{
+    cursor: pointer;
+} 
+.Pagination {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.ShopActive {
+    background-color: blue ;
+    color: white;
+}
+.HeaderLeft h3 {
+    cursor: pointer;
+    margin-bottom: 0;
+    color: #206a9d;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+.HeaderRight {
+    border:  1px solid blue;
+    padding: 3px;
+    border-radius: 4px;
+}
+.HeaderRight button {
+    /* background-color: #f4f7f6; */
+  
+    border: none;
+    padding: 5px 15px;
+}
+.Shoplist {
+    display: flex;
+    justify-content: center;
+    
+}
+@media screen and (max-width: 768px) {
+    .ShopManage {
+        margin: 10px 20px;
+    }
+    .HeaderRight {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .ShopManageHeader {
+        margin: 0 10px;
+    }
+    .HeaderRight button {
+        padding: 7px;
+    }
+}

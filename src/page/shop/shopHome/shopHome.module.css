@@ -1,0 +1,14 @@
+.shopHome{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.container{
+    background: #f5f5fa;
+}
+@media screen and (max-width: 768px){
+    .shopHome{
+        background: #005cd6;
+        width: 100vw;
+    }
+}

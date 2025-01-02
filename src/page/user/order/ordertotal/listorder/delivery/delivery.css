@@ -1,0 +1,31 @@
+.delivery_header .ant-space{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    padding: 10px 0;
+}
+.delivery_header .method_text{
+    display: inline-block;
+    padding: 4px 0 0 0 ;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(56, 56, 61);
+}
+
+.ant-radio-wrapper>span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.delivery_cost>span{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 171, 86);
+    padding: 0px 4px;
+   
+    margin-left: 4px;
+}

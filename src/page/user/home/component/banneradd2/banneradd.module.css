@@ -1,0 +1,14 @@
+.bannerAdd2{
+    display: flex;
+    justify-content: space-between;
+}
+.bannerAdd2 img{
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px){
+    .bannerAdd2{
+        display: none;
+        visibility: hidden;
+    }
+}

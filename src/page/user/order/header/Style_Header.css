@@ -1,0 +1,87 @@
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0px;
+}
+button, input {
+    overflow: visible;
+}
+body{
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+header{
+    display: block;
+}
+.hfMLFx {
+    /* width: 1270px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.iBrUcv .logo .divider {
+    width: 1px;
+    height: 32px;
+    background-color: rgb(26, 148, 255);
+    margin: 0px 16px;
+    display: block;
+}
+.iBrUcv .logo .title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(26, 167, 255);
+}
+.iBrUcv .hotline {
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.iBrUcv {
+    background: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+.iBrUcv .header-container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100px;
+}
+.iBrUcv .logo {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: flex-end;
+}
+a {
+    color: rgb(11, 116, 229);
+    text-decoration: none;
+}
+.fWjUGo {
+    object-fit: contain;
+}
+/* hết phần header */
+/* phần main */
+@media screen and (min-width: 100px) and (max-width:500px){
+
+    .logo{
+        align-items: center;
+    }
+    .title{
+        line-height:1.5rem;
+        font-size:1.5rem;
+    }
+}

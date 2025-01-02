@@ -1,0 +1,43 @@
+.SubVarient{
+    padding: 20px;
+   position: relative;
+   background: #f5f8fe;
+   padding: 20px;
+   border-radius: 15px;
+   margin-bottom: 15px;
+}
+.SubVarient span{
+    cursor: pointer;
+}
+.delete{
+    position: absolute;
+    top:10px;
+    right: 15px;
+}
+.addImage{
+    font-size: 13px;
+    color: rgb(87, 87, 87);
+}
+.Image_add{
+    font-size: 16px;
+}
+.Add_option{
+    padding: 15px;
+    background: #fff;
+    margin-top: 15px;
+    border: 1px dashed #cbced5;
+    border-radius: 6px;
+}
+.input_option{
+    outline: none;
+    border: solid 1px #ccc;
+    padding: 6px 12px;
+    min-width: 350px;
+    border-radius: 8px;
+}
+.all_varient{
+    margin-top: 15px;
+}
+.all_varient p{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,218 @@
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+html {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #efefef;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+html {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #efefef;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0px;
+}
+button, input {
+    overflow: visible;
+}
+body{
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+
+/* hết phần header */
+/* phần main */
+main{
+    display: block;
+}
+
+
+
+ /* main style */
+ .elPTRG {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 260px);
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 80px
+ }
+@media screen and (min-width: 100px) and (max-width:500px){
+    .elPTRG{
+        display: block;
+    }
+    .gJkhWZ, .gEhjmR,.kpgKjK,.hurZXJ {
+        display: none;
+    }
+    .other{
+        display: block;
+    }
+    .iBrUcv .logo{
+        display: flex;
+        align-items: center;
+    }
+    /* .iBrUcv .logo a picture{
+        position: relative;;
+        top:5px;
+    } */
+    .iBrUcv .logo .divider {    
+        display: block;
+        position: relative;
+        top:5px;
+        margin: 0px 48px 0 -12px
+    }
+    .iBrUcv .logo .title{
+        position: relative;
+        top:5px;
+        line-height:1.5rem;
+        font-size:1.5rem;
+        right: 35px;
+    }
+    .eEHLZh .shipping-method-list {
+        background: rgb(240, 248, 255);
+        border: 1px solid rgb(194, 225, 255);
+        border-radius: 10px;
+        padding: 16px;
+        display: grid;
+        row-gap: 12px;
+        z-index: 0;
+        margin: 0 15pxpx 0 0;
+    }
+    
+    .haMxul {
+        width: 129px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgb(13, 92, 182);
+        font-size: 12px;
+        line-height: 1.6;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(255, 255, 255);
+        color: rgb(13, 92, 182);
+        padding: 0px 12px;
+        cursor: pointer;
+        outline: 0px;
+        margin-top: 30px
+    }
+    .bVA-DDf {
+        position: relative;
+        padding: 27px;
+        margin-bottom: 16px;
+        background-color: rgb(255, 255, 255);
+    }
+    /* //// thẻ  */
+    .kpgKjK {
+        padding: 16px;
+        background-color: rgb(230, 238, 247);
+        margin-top: 24px;
+        /* width: 733px; */
+        max-width: 100%;
+    }
+    .bjLBFT {
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+        height: 87px;
+        box-shadow: rgb(0 0 0 / 15%) 0px 1px 4px 0px;
+        padding: 8px 12px;
+        position: relative;
+        cursor: pointer;
+        width: 81px;
+    }
+    .IYkXU {
+        display: flex;
+        align-items: center;
+        margin: 0px 4px;
+        margin-bottom: -9px;
+    }
+    .bjLBFT .row__method-img {
+        width: 23px;
+        height: 25px;
+        object-fit: contain;
+        object-position: right center;
+        margin-top: 1px;
+    }
+    .fWjUGos {
+        object-fit: contain;
+        padding: 6px;
+        
+        width: 43px;
+    }
+    .fycMVa {
+        border: 1px dashed rgb(204, 204, 204);
+        padding: -2px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 30px;
+        width: 59px;
+        cursor: pointer;
+        /* margin-right: 8px; */
+    }
+    .hurZXJ {
+        margin: 0px;
+        border-radius: 4px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        border: 0.5px solid rgb(199, 199, 199);
+        padding: 15px;
+        width: 329px;
+        visibility: hidden;
+        display: none;
+    }
+    .kYPdGi {
+        margin: 0;
+        cursor: auto;
+        width: 329px;
+    }
+    .bjLBFT .row__title {
+        font-size: 7px;
+        font-weight: 500;
+        line-height: 1.41;
+        color: rgb(13, 92, 182);
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-width: 130px;
+    }
+    .bjLBFT .row__info {
+        width: 14px;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+    .bjLBFT .row__warning {
+        color: rgb(253, 130, 10);
+        font-style: italic;
+        font-size: 6px;
+        line-height: -0.55;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .other1{
+        display: none;
+        overflow: hidden;
+    }
+    .webpimg-container img{
+        width: 120px;
+    }
+    
+}
+

@@ -1,0 +1,29 @@
+.Input_Price{
+    height: 100%;
+    border: 0;
+    border: solid 1px #ccc;
+    line-height: 36px;
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+}
+.Input_Price:hover{
+    border-color:rgb(35, 104, 255);
+}
+.Input_price_first{
+    width: 90px;
+}
+.Input_price_special{
+    width: 150px;
+}   
+.Input_price_storage{
+    width: 120px;
+    border-radius: 10px;
+}
+.ant-input-show-count-suffix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ant-input-number-handler-wrap{
+    background: none;
+}

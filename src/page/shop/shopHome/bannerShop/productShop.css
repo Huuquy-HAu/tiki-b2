@@ -1,0 +1,59 @@
+.ant-tabs-content-holder{
+    margin-top: 20px;
+}
+.ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
+    border-color: #0b74e5;
+    border-color: transparent;
+    margin-top: 10px;
+}
+.ant-tabs{
+    color:#fff
+}
+.ant-tabs-tab{
+    padding: 6px 0;
+}
+.ant-tabs .ant-tabs-nav{
+    left: 32px;
+}
+.ant-tabs-nav-wrap{
+    margin-top: 20px;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #58b3fd;
+    text-shadow: 0 0 0.25px currentcolor;
+}
+.ant-tabs-tab:hover {
+    color: #58b3fd;
+}
+.search .ant-btn-primary{
+    background: #1890ff !important;
+}
+.search .ant-btn{
+    display: inline-block !important;
+    height: 35px;
+}
+.search .ant-btn .anticon-search svg{
+    color: #fff;
+    height: 25px;
+}
+.search .ant-input{
+    height: 35px !important;
+    width: 300px;
+}
+@media screen and (max-width:768px){
+    .contentShop .ant-tabs-content{
+        margin-top: -25px;
+    }
+    .search .ant-input{
+        width: 100%;
+    }
+    .search{
+        width: 90vw;
+    }
+    .contentShop .ant-tabs-nav{
+        width: 100vw;
+        overflow-y: auto;
+        left: 0;
+        padding: 0 12px;
+    }
+}

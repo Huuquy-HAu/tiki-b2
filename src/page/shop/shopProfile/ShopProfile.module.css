@@ -1,0 +1,101 @@
+.shopProfile {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    margin:15px 15px 15px 0px;
+    border-radius: 18px;
+    padding-left: 20px;
+}
+.shopProfile_header {
+    margin-left: 0px;
+}
+.shopProfile_header h2 {
+    padding: 0px;
+    font-weight: 800;
+    font-size: 22px;
+}
+.Shop_Profiletext span {
+    margin-right: 5px;
+}
+.Shop_Profiletext svg {
+    font-size: 9px;
+    margin-bottom: 2px;
+}
+.email{
+    margin-bottom: 0;
+}
+.Profile_Text {
+    margin: 10px 0;
+}
+.profileshop_data {
+    font-size: 17px;
+    opacity: 0.7;
+    margin-bottom: 0px;
+} 
+.Profile_needchange {
+    display: flex;
+    margin-top: 3px;
+    font-size: 15px;
+    align-items: center;
+}
+.Profile_needchange p {
+    margin-right: 10px;
+    opacity: 0.8;
+}
+.change{
+    color: rgb(28, 17, 192);
+}
+.Profileshop_bottom {
+    margin: 5px 15px 15px 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(255, 255, 255);
+    border-radius: 18px;
+   
+}
+.Profileshop_bottom button {
+    color: white;
+    background-color: rgb(72, 144, 211);
+    border: none;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 6px;
+
+}
+.InputsetEmail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.InputsetEmail input {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.InputsetPhone {
+    margin-bottom: 10px;
+}
+.InputsetPhone input {
+width: 100%;
+}
+.InputsetName input {
+    width: 100%;
+    padding-left: 15px;
+}
+.SetPhone {}
+.Profileshop_Img {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.Profileshop_Img img{
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+}
+.spanrofileshop_data{
+    margin-right: 10px;
+    opacity: 0.8;
+}

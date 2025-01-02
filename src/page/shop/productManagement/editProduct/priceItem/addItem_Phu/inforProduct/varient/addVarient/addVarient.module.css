@@ -1,0 +1,18 @@
+.btn_add{
+    color:#333;
+    border-style: solid;
+    background-color: #fff;
+    border-color: #c4c6cf;
+    border-radius: 8px;
+    padding: 0 12px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    border-width: 1px;
+}
+.btn_add:hover{
+    color: #333;
+    background-color: #f2f3f7;
+    border-color: #f2f3f7;
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+.slider{
+    display: none;
+    visibility: hidden;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        margin-top: 10px;
+        display: flex;
+        visibility: visible;
+        width: 100vw;
+        overflow-x: auto;
+    }
+    .slider img{
+        width: 35vw;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .slider::-webkit-scrollbar{
+        display: none;
+    }
+}

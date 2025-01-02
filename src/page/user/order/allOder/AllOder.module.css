@@ -1,0 +1,120 @@
+.Alloder_Title {
+    margin-top: 15px;
+}
+.OderTitle {
+    padding: 0 0 4px 0;
+    margin-top: 15px;
+    background-color: rgb(255, 255,255);
+    border-bottom: solid 2px #0095ff;
+}
+.Oder_HeaderTitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 4px 0 2px 12px;
+    border-bottom: 1px solid rgb(238, 233, 233);
+    margin-bottom: 0;
+    background: #0095ff;
+    color: #fff;
+}
+.MidleTitle {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding:10px;
+    width: 100%;
+}
+.MidleTitle_Left {
+    display: flex;
+    
+}
+.MidleTitle_Left:hover{
+    cursor: pointer;
+}
+
+.ImageTitle {
+    width: 60px;
+    border:  1px solid #b0a9ab;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 4px  ;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.2);
+}
+.ImageTitleText {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ImageTitleText p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
+.OrderBottomTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.OderBottom_Shoplogo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 550;
+    margin: 0 10px;
+}
+.OderBottom_Shoplogo:hover{
+    cursor: pointer;
+}
+.OderBottom_Shoplogo img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+}
+.OderBottom_Shoplogo span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+}
+.ImageNumber {
+    display: flex;
+    justify-content: flex-end;
+}
+.EmptyOder {
+    background-color: rgb(255, 255,255);
+    text-align: center;
+    height: 0;
+}
+.EmptyOder img {
+    width: 200px;
+    margin: 30px 0;
+}
+.BottomTitle {
+   padding: 5px 15px 5px 0;
+}  
+
+.BottomTitle_Button:hover{
+    cursor: pointer;
+}
+
+
+.BottomTitle_Button {
+    padding: 0 3px;
+    background-color: white;
+    border: 1.5px solid #ccc;
+    margin-left: 10px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 12px;
+
+}

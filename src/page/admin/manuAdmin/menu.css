@@ -1,0 +1,18 @@
+.menu_admin .ant-menu-vertical .ant-menu-item::after, .menu_admin .ant-menu-vertical-left .ant-menu-item::after, .menu_admin .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    border-right: 0;
+}
+.menu_admin .ant-menu-item {
+    padding-left: 14px !important;
+}
+
+.menu_admin.ant-menu-inline.ant-menu-root .ant-menu-item > *, .ant-menu-inline.ant-menu-root .ant-menu-submenu-title > * {
+    /* flex: 1; */
+    line-height: 100%;
+    /* color: #fff; */
+}
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+    color: #fff;
+}
+.ant-menu-item-selected .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+    color: #1890ff;
+}

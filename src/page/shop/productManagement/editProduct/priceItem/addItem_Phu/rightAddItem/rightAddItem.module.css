@@ -1,0 +1,13 @@
+.tips{
+    background: #dbecff;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.tips h2{
+    font-weight: 600;
+    color:#1e73ff;
+}
+.RightAddItems{
+    display: none;
+}

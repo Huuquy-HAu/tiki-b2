@@ -1,0 +1,47 @@
+.transform .ant-select-selector{
+    height: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    border-radius: 6px !important; 
+}
+.transform{
+    margin-top: 6px !important;
+}
+.switch{
+    margin-right: 12px;
+    height: 34px;
+    width: 60px;
+}
+.switch .ant-switch-handle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.switch .ant-switch-handle::before{
+    border-radius: inherit;
+}
+.switch.ant-switch-checked .ant-switch-handle {
+    left: 28px;
+}
+.input_number_hev{
+    display: block;
+    width: 350px;
+    height: 35px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+.input_number_hev .ant-input-number-input-wrap,
+.input_number_hev .ant-input-number-handler-wrap{
+    border-radius: inherit;
+}
+.input_number_he .ant-input-number-input-wrap,
+.input_number_he .ant-input-number-handler-wrap{
+    border-radius: inherit;
+}
+.input_number_he{
+    height: 35px;
+    border-radius: 6px;
+    margin-top: 6px;
+    width: 285px;
+}

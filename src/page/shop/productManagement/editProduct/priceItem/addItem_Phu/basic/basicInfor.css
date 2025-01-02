@@ -1,0 +1,10 @@
+.input_additem{
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+.selected_product{
+    width: 1200px;
+}
+.selected_product>.ant-select-selector {
+    height: 35px !important;
+}

@@ -1,0 +1,35 @@
+.option {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.option_left_input {
+    margin-right: 15px;
+}
+
+.option_page {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+
+.option_btn {
+    border: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(245, 245, 245, 0.895);
+    font-weight: 400;
+    color: rgb(201, 199, 199);
+}
+
+@media  only screen and (max-width:769px){
+    .option {
+        display: none;
+    }
+}
