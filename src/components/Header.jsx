@@ -55,42 +55,53 @@ function Header(props) {
     return str;
   }
   function SearchTitle(input) {
-
     if (input.trim() != '') {
-      document.querySelector(".CoverInputListItems").setAttribute('style', 'display: none;');
-      document.querySelector(".HistorySeach").setAttribute('style', 'display: block;');
-
+        document.querySelector(".CoverInputListItems").setAttribute('style', 'display: none;');
+        document.querySelector(".HistorySeach").setAttribute('style', 'display: block;');
     } else {
-      document.querySelector(".CoverInputListItems").setAttribute('style', 'display: block;');
-      document.querySelector(".HistorySeach").setAttribute('style', 'display: none;');
+        document.querySelector(".CoverInputListItems").setAttribute('style', 'display: block;');
+        document.querySelector(".HistorySeach").setAttribute('style', 'display: none;');
     }
 
     setSearch(input);
-    clearTimeout(setTime)
+    clearTimeout(setTime);
     setTime = setTimeout(() => {
-      const res = getAPI(`/product/find-product-by-name?productName=${input}`)
-        .then((data) => {
-          let dataSearch = data.data.categories;
-          if (dataSearch.length > 0) {
-            setWord(dataSearch.slice(0, 8));
-          } else {
-            setWord([
-              {
-                categoryName:
-                  "không có kết quả nào phù hợp, mời bạn nhập lại !!!",
-              },
-            ]);
-          }
-          clearTimeout(setTime);
+        getAPI(`/product/find-product-by-name?productName=${input}`)
+            .then((data) => {
+                let dataSearch = data.data.categories;
+                const dataProduct = data.data.product;
 
-        })
-        .catch((err) => {
-          console.log(err);
-          clearTimeout(setTime);
-        })
-    }, [0])
+                console.log(dataProduct);
 
-  }
+                if (dataSearch.length > 0 || dataProduct.length > 0) {
+                    // Combine categories and products into setWord
+                    const combinedData = [
+                        ...dataSearch.slice(0, 4),
+                        ...dataProduct.slice(0, 5).map((product) => ({
+                            categoryName: product.productName
+                        }))
+                    ];
+                    setWord(combinedData);
+                } else {
+                    setWord([
+                        {
+                            categoryName:
+                                "không có kết quả nào phù hợp, mời bạn nhập lại !!!",
+                        },
+                    ]);
+                }
+
+                clearTimeout(setTime);
+            })
+            .catch((err) => {
+                console.log(err);
+                clearTimeout(setTime);
+            });
+    }, 0);
+}
+
+console.log(word);
+
   ///
   function seachInputData(categoryName) {
     nav(`/filter?search=${categoryName}`);
