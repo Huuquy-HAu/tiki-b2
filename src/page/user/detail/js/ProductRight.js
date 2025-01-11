@@ -47,7 +47,7 @@ function ProductRight(props) {
       <div className="header">
         <div className="brand">
           <span className="brand-and-author ">
-            Thương hiệu : {props.productDetail.brandId.brandName?props.productDetail.brandId.brandName:'No Brand'}
+            Thương hiệu : {props?.productDetail?.brandId?.brandName?props?.productDetail?.brandId?.brandName:'No Brand'}
           </span>
           <div class=" gXZfKO"></div>
           <div className="bestseller">
