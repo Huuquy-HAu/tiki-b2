@@ -39,50 +39,49 @@ const Filter = () => {
     return str;
   }
 
-  console.log(42, listProducts)
-
+  // console.log(42, listProducts)
   useEffect(() => {
-    setListProducts([])
-    setLoading(true)
-    getAPI("/product/get-all-products")
-    .then((data)=> {
-      setListProducts(() => {
-        setData([])
-        const newData = []
-        for(let value of data.data.listProduct) {
-          if(search){
-            if(value.price && value.brandId && value.categoryId && value.shopId.address){
-                const newName = value.categoryId.categoryName.toLowerCase()
-                  if(newName.includes(search.toLowerCase())){
-                    newData.push(value)
-                    setLoading(false)
-                    setSos(false)
-                  }else {
-                    if(removeAccents(newName).includes(search.toLowerCase())){
-                      newData.push(value)
-                      setLoading(false)
-                      setSos(false)
-                    }
-                  }
-            }
-          }else {
-            if(value.price) {
-              newData.push(value)
-              setLoading(false)
-            }
+    const fetchProducts = async () => {
+      setListProducts([]);
+      setLoading(true);
+  
+      try {
+        const { data } = await getAPI("/product/get-all-products");
+        console.log(50,data);
+  
+        const searchLower = search ? search.toLowerCase() : "";
+        const searchNoAccents = search ? removeAccents(searchLower) : "";
+        const newData = data.listProduct.filter((value) => {
+          console.log( 56,value);
+          if (!value.price || !value.categoryId ) {
+            return false;
           }
-        }
-        if(newData.length === 0) {
-          setSos(true)
-        }
-        return newData
-      })
-    })
-    .catch((error) => {
-      setLoading(false)
-    }) 
-  },[search])
-
+          
+          const categoryName = value.categoryId.categoryName.toLowerCase();
+          // console.log(61,categoryName , searchLower);
+          // if (search) {
+          //   return (
+          //     categoryName.includes(searchLower) ||
+          //     removeAccents(categoryName).includes(searchNoAccents)
+          //   );
+          // }
+          return true;
+        });
+        console.log(70,newData);
+  
+        setListProducts(newData);
+        setLoading(false);
+        setSos(newData.length === 0);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setLoading(false);
+        setSos(true);
+      }
+    };
+  
+    fetchProducts();
+  }, [search]);
+  
   return (
     <div className='App'>
         <div  className = {styles.slider}>

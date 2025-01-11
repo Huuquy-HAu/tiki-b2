@@ -321,7 +321,7 @@ console.log(word);
                   (
                     <div className="HeaderTopContainerUser cursorPoiter">
                       {/* //hiển thi avartar */}
-                      {console.log(305, user_information)}
+                      {/* {console.log(305, user_information)} */}
                       {/* <img src=
                         {user_information.avatar.length > 0 ?
                           user_information.avatar : "https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"}

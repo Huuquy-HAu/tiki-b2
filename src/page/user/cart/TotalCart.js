@@ -14,6 +14,7 @@ function TotalCart() {
   async function getCart() {
     try {
       const data = await getAPI("/cart/get-loged-in-cart");
+      console.log(data.data.cart._id , data.data.cart.listProduct , data.data.cart.product);
       setCartID(data.data.cart._id)
       const listProductdetail = data.data.cart.listProduct;
       const newData = data.data.cart.product;
@@ -31,12 +32,14 @@ function TotalCart() {
         };
       });
       const Newdata = [...NEWDATA, ...listProductdetail]
+      console.log(Newdata);
       const EndData = []
       Newdata.map(item=>{
-        if(item.selected==false){
+        if(item.selected){   //item.selected==false
           EndData.push(item) 
         }
       })
+      console.log(42,EndData);
       setListProduct(()=>{
         if(EndData&&EndData.length>0){
           return EndData
