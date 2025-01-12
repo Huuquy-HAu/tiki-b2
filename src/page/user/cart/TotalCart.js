@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
 import ClosingCart from "./ClosingCart";
-import style from "./TotalCart.module.css";
 import { getAPI, patchAPI } from "../../../config/api";
 import data from "../profile/UserInfo_data/data";
+import './TotalCart.css'
 
 function TotalCart() {
   const [listProduct, setListProduct] = React.useState([]);
@@ -35,7 +35,7 @@ function TotalCart() {
       console.log(Newdata);
       const EndData = []
       Newdata.map(item=>{
-        if(item.selected){   //item.selected==false
+        if(item.selected == false ){   //item.selected==false
           EndData.push(item) 
         }
       })
@@ -184,7 +184,7 @@ function TotalCart() {
     });
   };
   const onAdd = (e, id) => {
-    const check = e.target.closest(`.${style.tradingCart}`).querySelector(".checkItem").checked;
+    const check = e.target.closest(`.tradingCart`).querySelector(".checkItem").checked;
     setFinalTotal(() => {
       const newElement = listProduct.filter((item) => {
         return item.productDetailId._id == id;
@@ -264,7 +264,7 @@ function TotalCart() {
       newListData[index].listProduct[index1].checked = e.target.checked;
       return newListData;
     });
-    const ListCheckItem = e.target.closest(`.${style.tradingCart}`).querySelectorAll(".checkItem");
+    const ListCheckItem = e.target.closest(`.tradingCart`).querySelectorAll(".checkItem");
     if (
       [...ListCheckItem].filter((item) => {
         return item.checked == false;
@@ -277,7 +277,7 @@ function TotalCart() {
             return item.checked == false;
           }).length == 0
         ) {
-          document.querySelector(`.${style.TotalCheckItemStore}`).checked = true;
+          document.querySelector(`.TotalCheckItemStore`).checked = true;
         }
         const newListData = [...newData];
         newListData[index].checked = true;
@@ -285,7 +285,7 @@ function TotalCart() {
       });
     } else {
       setNewData(() => {
-        document.querySelector(`.${style.TotalCheckItemStore}`).checked = false;
+        document.querySelector(`.TotalCheckItemStore`).checked = false;
         const newListData = [...newData];
         newListData[index].checked = false;
         return newListData;
@@ -309,9 +309,9 @@ function TotalCart() {
             return item.checked == false;
           }).length == 0
         ) {
-          document.querySelector(`.${style.TotalCheckItemStore}`).checked = true;
+          document.querySelector(`.TotalCheckItemStore`).checked = true;
         } else {
-          document.querySelector(`.${style.TotalCheckItemStore}`).checked = false;
+          document.querySelector(`.TotalCheckItemStore`).checked = false;
         }
         setFinalTotal(() => {
           const newListFinalTotal = [];
@@ -396,33 +396,33 @@ function TotalCart() {
       <div className="totalcart-right">
         <div className="total-cart">
           <label>
-            <input type="checkbox" onChange={handleTotalCheckItemStore} className={style.TotalCheckItemStore} /> <span className="checkboxStore"></span>{" "}
-            <span className={style.text_TotalCheckItemStore}>Tất cả ({product} sản phẩm)</span>
+            <input type="checkbox" onChange={handleTotalCheckItemStore} className={'TotalCheckItemStore'} /> <span className="checkboxStore"></span>{" "}
+            <span className={'text_TotalCheckItemStore'}>Tất cả ({product} sản phẩm)</span>
           </label>
           <span>Đơn giá</span>
           <span>Số lượng</span>
           <span>Thành tiền</span>
-          <span className={style.remove_all} onClick={handleRemoveAllCheckItem}>
+          <span className={'remove_all'} onClick={handleRemoveAllCheckItem}>
             <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg" alt="deleted" />
           </span>
         </div>
         <div className="TradingCart">
           {newData.map((item1, index) => {
             return (
-              <div className={style.tradingCart}>
-                <div className={style.tradingCart_header}>
-                  <input type="checkbox" checked={item1.checked} onChange={(e) => handleCheckStore(e, index)} className={style.storeCart} />
-                  <img src="https://salt.tikicdn.com/ts/upload/30/24/79/8317b36e87e7c0920e33de0ab5c21b62.png" alt="#" className={style.tradingCart_sellers__icon_home}></img>
-                  <div className={style.tradingCart_shopName}>
+              <div className={'tradingCart'}>
+                <div className={"tradingCart_header"}>
+                  <input type="checkbox" checked={item1.checked} onChange={(e) => handleCheckStore(e, index)} className={'storeCart'} />
+                  <img src="https://salt.tikicdn.com/ts/upload/30/24/79/8317b36e87e7c0920e33de0ab5c21b62.png" alt="#" className={'tradingCart_sellers__icon_home'}></img>
+                  <div className={"tradingCart_shopName"}>
                     {item1.shopName}
-                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/Path.svg" alt="seller-link" className={style.sellers__icon_arrow}></img>
+                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/Path.svg" alt="seller-link" className={'sellers__icon_arrow'}></img>
                   </div>
                 </div>
 
                 {item1.listProduct.map((item, index1) => {
                   return (
-                    <div className={style.tradingCart_container}>
-                      <div className={style.col_1}>
+                    <div className={'tradingCart_container'}>
+                      <div className={"col_1"}>
                         {" "}
                         <input
                           checked={item.checked}
@@ -433,7 +433,7 @@ function TotalCart() {
                           index1={index1}
                           onChange={(e) => handleCheckItem(e, index, index1)}
                         />
-                        <div className={style.tradingCart_img}>
+                        <div className={'tradingCart_img'}>
                           <img
                             src={
                               item.productDetailId.productId.thump[0].startsWith("http")
@@ -443,13 +443,13 @@ function TotalCart() {
                             alt=""
                           />
                         </div>
-                        <div className={style.tradingCart_content}>
+                        <div className={'tradingCart_content'}>
                           <a>
                             {" "}
                             <img
                               src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/tikinow/tiki-now-15@2x.png"
                               alt="tiki-icon"
-                              className={style.product__icon__fast}
+                              className={'product__icon__fast'}
                               width="64"
                               height="16"
                             ></img>
@@ -457,22 +457,22 @@ function TotalCart() {
                           </a>
                         </div>
                       </div>
-                      <div className={style.tradingCart_price}>
+                      <div className={'tradingCart_price'}>
                         <span>{item.productDetailId.price.toLocaleString()} ₫</span>
                       </div>
-                      <div className={style.tradingCart_qty}>
-                        <button className={style.decrease} onClick={(e) => onRemove(e, item.productDetailId._id, index, index1)}>
+                      <div className={'tradingCart_qty'}>
+                        <button className={'decrease'} onClick={(e) => onRemove(e, item.productDetailId._id, index, index1)}>
                           -
                         </button>
-                        <input type="tel" value={item.quantity} index={item.productDetailId._id} className={style.qty_input} />
-                        <button className={style.increase} onClick={(e) => onAdd(e, item.productDetailId._id)}>
+                        <input type="tel" value={item.quantity} index={item.productDetailId._id} className={'qty_input'} />
+                        <button className={'increase'} onClick={(e) => onAdd(e, item.productDetailId._id)}>
                           +
                         </button>
                       </div>
-                      <div className={style.tradingCart_finalPrice} index={item.productDetailId._id}>
+                      <div className={'tradingCart_finalPrice'} index={item.productDetailId._id}>
                         <span>{(item.productDetailId.price * item.quantity).toLocaleString()} ₫</span>
                       </div>
-                      <div className={style.tradingCart_delete} onClick={() => onDelete(item.productDetailId._id, index, index1)}>
+                      <div className={'tradingCart_delete'} onClick={() => onDelete(item.productDetailId._id, index, index1)}>
                         <img src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg" alt="deleted" />
                       </div>
                     </div>
